@@ -1,4 +1,4 @@
-#
+
 #  Be sure to run `pod spec lint QNetwork.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = "Http/NSURLSession"
+  s.description  = "Http NSURLSession (Get/Post)"
 
   s.homepage     = "https://github.com/QCristo/QNetwork"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license = "MIT"
+  s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -51,7 +51,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "清哥" => "liuqing1020liuqing@126.com" }
+  s.author             = { "Cristo" => "liuqing1020liuqing@126.com" }
   # Or just: s.author    = "Cristo"
   # s.authors            = { "Cristo" => "liuqing1020liuqing@126.com" }
   # s.social_media_url   = "http://twitter.com/Cristo"
@@ -89,8 +89,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = 'QHttpSession.{h,m}','UIImageView+QHttpData.{h,m}'
- # s.exclude_files = "Classes/Exclude"
+  s.source_files  = "UIImageView+QHttpData.{h,m}", "QHttpSession.{h,m}"
+  #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -115,6 +115,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
+  # s.framework  = "SomeFramework"
   s.frameworks = "UIKit", "Foundation"
 
   # s.library   = "iconv"
