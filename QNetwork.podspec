@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = "Http NSURLSession (Get/Post)"
+  s.description  = "Http base on NSURLSession (Get/Post) ."
 
   s.homepage     = "https://github.com/QCristo/QNetwork"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -62,7 +62,7 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  s.platform     = :ios
+  #s.platform     = :ios
   s.platform     = :ios, "7.0"
 
   #  When using multiple platforms
